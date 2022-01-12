@@ -1,0 +1,112 @@
+.wrapper {
+    width: 600px;
+    margin: 0px auto;
+}
+.header {
+    min-width: 300px;
+    background-color: #bb4430;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #efe6dd;
+    margin: 0px 0px 20px 0px;
+}
+.header__form {
+    display: flex;
+    width: 100%;
+}
+.header__input {
+    background-color: #efe6dd;
+    padding: 11px;
+    flex: 1 1 auto;
+    border-radius: 15px 0 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.header__input::placeholder {
+    color: #231f20;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.header__btn {
+    text-align: center;
+    flex: 0 1 120px;
+    background-color: #7ebdc2;
+    border-radius: 0 15px 15px 0;
+    color: #231f20;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    transition: background-color 0.3s ease 0s;
+}
+.header__btn:hover {
+    background-color: #72dce4;
+}
+.header__btn:active {
+    background-color: #58a0a5;
+}
+.list {
+}
+.list__case {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 15px 15px 30px;
+    color: #231f20;
+    background-color: #f3dfa2;
+    transition: background-color 0.2s ease 0s;
+    border-left: 1px solid #f3dfa2;
+    border-right: 1px solid #f3dfa2;
+    border-top: 1px solid #f3dfa2;
+    cursor: pointer;
+    user-select: none;
+}
+.list__case:last-child {
+    border-bottom: 1px solid #f3dfa2;
+}
+
+.list__case:hover {
+    background-color: #efd381;
+}
+
+.list__checked {
+    position: relative;
+    text-decoration: line-through;
+    background-color: #bb4430;
+    color: #231f20;
+}
+.list__checked::before {
+    content: "";
+    position: absolute;
+    border-color: #231f20;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+
+    left: 12px;
+    transform: rotate(45deg);
+    height: 13px;
+    width: 7px;
+}
+.list__checked:hover {
+    background-color: #d1604d;
+}
+.close {
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 14px 16px;
+    top: 0;
+    transition: background-color 0.3s ease 0s;
+}
+.close:hover {
+    background-color: #bb4430;
+}
