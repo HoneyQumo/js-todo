@@ -73,17 +73,16 @@ function deleteCase() {
     const cases = document.querySelectorAll('.list__case');
     const closeButtons = document.querySelectorAll('.close');
 
-    cases.forEach(caseis => {
-        caseis.addEventListener('click', (e) => {
-            for (let i = 0; i < cases.length; i++) {
+    //todo: когда удаляю определнный 'n' нужно уменьшить или перезаписать 'index' у 'n' которые находятся выше. То есть, если у меня есть 0,1,2,3,4 и я удаляю 1, то индексы у 2,3,4 нужно уменьшить
+
+    cases.forEach(cas => {
+        cas.addEventListener('click', (e) => {
+            for (let i = 0; i < localStorage.length; i++) {
                 if (closeButtons[i] === e.target) {
-                    caseis.remove();
+                    cas.remove();
                     localStorage.removeItem(i);
                 }
             }
         });
     });
-
 }
-
-
