@@ -3,6 +3,7 @@
     margin: 0px auto;
 }
 .header {
+    margin-top: 10px;
     min-width: 300px;
     background-color: #bb4430;
     padding: 25px;
